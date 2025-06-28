@@ -1,0 +1,908 @@
+
+/* All Shortcuts  */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+    --white: #fff;
+    --gray: #95a5a6;
+    --light-gray: #f5f5f5;
+    --border-radius: 4px;
+    --box-shadow: 2px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    --transition:all 0.4s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+    color: var(--text-color);
+    background-color: var(--light-gray);
+}
+
+/* My Blog style */
+#blog {
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* All Images  */
+#img1 {
+    border: 2px solid black;
+    margin: 10px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+    background-image: url('https://www.clariontech.com/hubfs/Top%208%20technologies%20transforming%20the%20future%20of%20web%20development.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#img2 {
+    background-image: url('https://freelancetopic.com/wp-content/uploads/2018/07/Digital-Marketing-Freelance-Topic.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 10px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+}
+
+#img3 {
+    background-image: url('https://www.chitkara.edu.in/blogs/wp-content/uploads/2023/06/The-impact-of-artificial-intelligence-on-various-industries-1024x598.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 10px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+}
+
+#img4 {
+    background-image: url('https://cdn.mindmajix.com/blog/images/cyber-security-best-practices-300420.png');
+    background-position: center;
+    background-size: cover;
+    margin: 10px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ 
+/* Header Styles */
+.main-header {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    height: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.search-bar {
+    display: flex;
+    width: 300px;
+    gap: 10px;
+}
+
+/* Search Bar */
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--gray);
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar input:hover {
+ border: 2px solid var(--primary-color);
+}
+
+.search-bar button {
+    padding: 10px 14px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+}
+
+.search-bar button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.login-btn {
+    padding: 11px 14px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    font-size: 1rem;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.login-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.main-nav {
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.nav-list li a.active,
+.nav-list li a:hover {
+    color: var(--primary-color);
+}
+
+/* Menu Toggle Button */
+.menu-btn {
+    display: none;
+    background: var(--primary-color);
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    padding: 4px 8px;
+}
+
+.menu-btn:hover {
+    background: var(--dark-color);
+    transition: 0.2s ease;
+    color: var(--white);
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 0;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+/* Blog Post Styles */
+.blog-post {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+}
+
+.blog-post.featured {
+    margin-bottom: 50px;
+}
+
+.post-content {
+    padding: 25px;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.post-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.post-meta i {
+    margin-right: 5px;
+}
+
+.about-post {
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+}
+
+.read-more:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.read-more i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+/* Comments Section */
+.comments-section {
+    padding: 25px;
+    border-top: 1px solid var(--light-gray);
+}
+
+.comments-section h3 {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.comments-section h3 i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.comments-list {
+    margin-bottom: 30px;
+}
+
+.comment {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.comment:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.comment-content h4 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.comment-date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.comment-text {
+    font-size: 0.95rem;
+}
+
+.comment-form h4 {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius);
+    font-family: inherit;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    margin-bottom: 30px;
+    height: max-content;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--light-gray);
+    margin-bottom: 20px;
+}
+
+.author-image {
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    color: var(--dark-color);
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Categories Styling */
+.categories ul {
+    list-style: none;
+}
+
+.categories li {
+    margin-bottom: 10px;
+}
+
+.categories a {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: var(--text-color);
+    border-bottom: 5px solid var(--light-gray);
+}
+
+.categories a:hover {
+    color: var(--primary-color);
+}
+
+.categories span {
+    color: var(--text-light);
+}
+
+/* Contact Form Styling */ 
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius);
+}
+
+#massage {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--white);
+}
+
+.footer-section a:hover {
+    color: var(--primary-color);
+}
+
+.footer-section .social-links a {
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.footer-section .social-links a:hover {
+    background: var(--text-color);
+    color: var(--white);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Login Container */
+
+.login-box {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.login-box.active {
+    display: flex;
+}
+
+.login-container {
+    /* Your existing styles remain the same */
+    z-index: 1001; /* Above the overlay */
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.login-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0ef 100%);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+/* Login Form */
+.login-form {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.input-with-icon input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.forgot-password a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0ef 100%);
+    border: none;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--primary-color);
+    background: var(--dark-color);
+    color: var(--white);
+}
+
+/* Social Login */
+.social-login {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-login p {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.social-login p::before,
+.social-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #e2e8f0;
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: #db4437;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+/* Sign Up Link */
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #718096;
+}
+
+.signup-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.cancle-btn {
+    font-size: 1rem;
+    border: none;
+    background: var(--primary-color);
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin-left: 22rem;
+    position: relative;
+    top: -53px;
+
+}
+
+/* Laptop, Tablet, Mobile Responsive Styling */
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        order: -1;
+        margin-bottom: 40px;
+    }
+    
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1 1 50%;
+        margin-bottom: 30px;
+    }
+
+    .login-box {
+        height: 1200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+    
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-list.show {
+        display: flex;
+    }
+    
+    .menu-btn {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -140px;
+    }
+    .logo {
+        margin-right: 420px;
+    }
+
+    .login-btn {
+        position: absolute;
+        top: -200px;
+        right: 1.5px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .post-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .footer-section {
+        flex: 1 1 100%;
+    }
+    
+    .comment {
+        flex-direction: column;
+    }
+    .logo {
+        margin-right: 250px;
+    }
+    .login-header {
+        padding: 20px;
+    }
+    
+    .login-header h1 {
+        font-size: 24px;
+    }
+    
+    .login-form {
+        padding: 20px;
+    }
+    
+    .remember-forgot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cancle-btn {
+        margin-left: 280px;
+    }
+
+}

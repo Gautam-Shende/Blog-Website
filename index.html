@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blogs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Header Section  -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <h1 class="logo"><span id="blog">MY</span> Blogs</h1>
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Search articles..."
+              id="search-input"
+            />
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <!-- Navbar  -->
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#post1">Digital Marketing</a></li>
+            <li><a href="#post2">Artifcial Intelligence</a></li>
+            <li><a href="#post3">Cybersecurity</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="menu-btn"><i class="fas fa-bars"></i></button>
+          <button class="login-btn"><i class="fas fa-user"></i></button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+      <section class="main-post">
+        <article class="blog-post">
+          <div id="img1"><!-- post img  --></div>
+          <div class="post-content">
+            <span class="category-tag">Web Development</span>
+            <h2>The Future of Web Development in 2023</h2>
+            <div class="post-meta">
+              <span class="author">
+                <i class="fas fa-user"></i> Abhishek Sharma
+              </span>
+              <span class="date">
+                <i class="fas fa-calendar-alt"></i> June 15, 2023
+              </span>
+            </div>
+            <p class="about-post">
+              Exploring the latest trends in web development including
+              WebAssembly, Progressive Web Apps, and the evolution of JavaScript
+              frameworks...
+            </p>
+            <a href="#" class="read-more"
+              >Read More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <div class="content-wrapper">
+        <!-- All Blog Posts Section -->
+        <section class="blog-posts">
+          <!-- Article Post1 Section  -->
+          <article class="blog-post" id="post1">
+            <div id="img2"><!-- post1 Img --></div>
+            <div class="post-content">
+              <span class="category-tag">Digital Marketing</span>
+              <h2>The Digital Marketing best for Future</h2>
+              <div class="post-meta">
+                <span class="author">
+                  <i class="fas fa-user"></i> Rohit Suryavanshi
+                </span>
+                <span class="date">
+                  <i class="fas fa-calendar-alt"></i> June 15, 2023
+                </span>
+              </div>
+              <p class="post-excerpt">
+                Exploring the latest trends in web development including
+                WebAssembly, Progressive Web Apps, and the evolution of
+                JavaScript frameworks...
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="comments-section">
+              <h3><i class="fas fa-comments"></i> Discussion</h3>
+              <div class="comments-list" id="comments-post1">
+                <!-- Comments will be loaded here -->
+              </div>
+              <form class="comment-form" id="comment-form-post1">
+                <h4>Leave a Comment</h4>
+                <div class="form-group">
+                  <label for="name-post1">Name*</label>
+                  <input type="text" id="name-post1" required />
+                </div>
+                <div class="form-group">
+                  <label for="comment-post1">Comment*</label>
+                  <textarea id="comment-post1" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Post Comment</button>
+              </form>
+            </div>
+          </article>
+
+          <!-- Article Post2 Section  -->
+          <article class="blog-post" id="post2">
+            <div id="img3"></div>
+            <div class="post-content">
+              <span class="category-tag">Artificial Intelligence</span>
+              <h2>How AI is Revolutionizing Industries</h2>
+              <div class="post-meta">
+                <span class="author">
+                  <i class="fas fa-user"></i> Rohini Raut
+                </span>
+                <span class="date">
+                  <i class="fas fa-calendar-alt"></i> June 10, 2023
+                </span>
+              </div>
+              <p class="post-excerpt">
+                From healthcare to finance, artificial intelligence is
+                transforming how businesses operate. We examine the most
+                impactful applications...
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="comments-section">
+              <h3><i class="fas fa-comments"></i> Discussion</h3>
+              <div class="comments-list" id="comments-post2">
+                <!-- Comments will be loaded here -->
+              </div>
+              <form class="comment-form" id="comment-form-post2">
+                <h4>Leave a Comment</h4>
+                <div class="form-group">
+                  <label for="name-post2">Name*</label>
+                  <input type="text" id="name-post2" required />
+                </div>
+                <div class="form-group">
+                  <label for="comment-post2">Comment*</label>
+                  <textarea id="comment-post2" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Post Comment</button>
+              </form>
+            </div>
+          </article>
+
+          <!-- Article Post3 Section  -->
+          <article class="blog-post" id="post3">
+            <div id="img4"></div>
+            <div class="post-content">
+              <span class="category-tag">Cybersecurity</span>
+              <h2>Essential Cybersecurity Practices for 2023</h2>
+              <div class="post-meta">
+                <span class="author">
+                  <i class="fas fa-user"></i> Aman Gupta
+                </span>
+                <span class="date">
+                  <i class="fas fa-calendar-alt"></i> June 5, 2023
+                </span>
+              </div>
+              <p class="post-excerpt">
+                With cyber threats evolving rapidly, these essential practices
+                will help protect your personal and professional data in the
+                coming year...
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="comments-section">
+              <h3><i class="fas fa-comments"></i> Discussion</h3>
+              <div class="comments-list" id="comments-post3">
+                <!-- Comments will be loaded here -->
+              </div>
+              <form class="comment-form" id="comment-form-post3">
+                <h4>Leave a Comment</h4>
+                <div class="form-group">
+                  <label for="name-post3">Name*</label>
+                  <input type="text" id="name-post3" required />
+                </div>
+                <div class="form-group">
+                  <label for="comment-post3">Comment*</label>
+                  <textarea id="comment-post3" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Post Comment</button>
+              </form>
+            </div>
+          </article>
+        </section>
+
+        <!-- Aside Author, Categories And Contact Section -->
+        <aside id="about" class="sidebar">
+          <div class="sidebar about">
+            <h3>About the Author</h3>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/036/459/932/non_2x/ai-generated-confident-young-indian-businessman-portrait-png.png"
+              alt="Author"
+              class="author-image"
+            />
+            <p>
+              Hi, I'm Rohan Gupta, a tech enthusiast and professional developer
+              with over 10 years of experience in the industry.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <!-- Categories -->
+          <div class="sidebar categories">
+            <h3>Categories</h3>
+            <ul>
+              <li>
+                <a href="#">Web Development <span>(12)</span></a>
+              </li>
+              <li>
+                <a href="#">Artificial Intelligence <span>(8)</span></a>
+              </li>
+              <li>
+                <a href="#">Cybersecurity <span>(5)</span></a>
+              </li>
+              <li>
+                <a href="#">Cloud Computing <span>(7)</span></a>
+              </li>
+              <li>
+                <a href="#">Data Science <span>(6)</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <div id="contact" class="sidebar contact">
+            <h3>Contact here</h3>
+            <form class="contact-form">
+              <input type="text" placeholder="Your full Name" required />
+              <input type="email" placeholder="Your email address" required />
+              <input type="number" placeholder="Your Mobile Number" required />
+              <textarea placeholder="Your massage" id="massage"></textarea>
+              <button class="submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <section class="login-box">
+      <div class="login-container">
+        <div class="login-header">
+          <h1>Welcome Back</h1>
+          <p>Please login to your account</p>
+          <span class="cancle-btn"> <i class="fas fa-times"></i></span>
+        </div>
+
+        <form class="login-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-with-icon">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-with-icon">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="remember-forgot">
+            <div class="remember-me">
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <div class="forgot-password">
+              <a href="#">Forgot password?</a>
+            </div>
+          </div>
+
+          <button type="submit" class="login-button">Login</button>
+
+          <div class="social-login">
+            <p>Or login with</p>
+            <div class="social-icons">
+              <div class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <div class="social-icon google">
+                <i class="fab fa-google"></i>
+              </div>
+              <div class="social-icon twitter">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="signup-link">
+            Don't have an account? <a href="#">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3><span id="blog">MY</span> Blogs</h3>
+            <p>
+              Bringing you the latest in technology trends, developments, and
+              innovations.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 MY Blogs. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
